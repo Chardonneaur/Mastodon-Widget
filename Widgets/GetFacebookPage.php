@@ -6,7 +6,7 @@
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  *
  */
-namespace Piwik\Plugins\FacebookPageWidgetByAmperage\Widgets;
+namespace Piwik\Plugins\MastodonWidget\Widgets;
 
 use Piwik\Widget\Widget;
 use Piwik\Widget\WidgetConfig;
@@ -26,7 +26,7 @@ use Piwik\Plugins\CorePluginsAdmin\SettingsMetadata;
  * To configure a widget simply call the corresponding methods as described in the API-Reference:
  * http://developer.piwik.org/api-reference/Piwik/Plugin\Widget
  */
-class GetFacebookPage extends Widget
+class GetMastodonWidget extends Widget
 {
 
     /**
@@ -45,7 +45,7 @@ class GetFacebookPage extends Widget
          * Set the category the widget belongs to. You can reuse any existing widget category or define
          * your own category.
          */
-        $config->setCategoryId('FacebookPageWidgetByAmperage_Social');
+        $config->setCategoryId('MastodonWidget_Social');
 
         /**
          * Set the subcategory the widget belongs to. If a subcategory is set, the widget will be shown in the UI.
@@ -55,12 +55,12 @@ class GetFacebookPage extends Widget
         /**
          * Set the name of the widget belongs to.
          */
-        $config->setName('FacebookPageWidgetByAmperage_FacebookPage');
+        $config->setName('MastodonWidget_MastodonWidget');
 
         /**
          * Set the order of the widget. The lower the number, the earlier the widget will be listed within a category.
          */
-        $config->setOrder(50);
+        $config->setOrder(51);
 
         /**
          * Optionally set URL parameters that will be used when this widget is requested.
@@ -97,8 +97,8 @@ class GetFacebookPage extends Widget
 			$idSite = Common::getRequestVar('idSite');
 
 			// Get the Facebook Page URL setting from Piwik based on the Measurable (Site/App) (allowing different sites/apps to have different Facebook Pages)
-			$settings = $this->settingsProvider->getMeasurableSettings('FacebookPageWidgetByAmperage', $idSite);
-			$facebook_page_url = $settings->facebookPageURLSetting->getValue();
+			$settings = $this->settingsProvider->getMeasurableSettings('MastodonWidget', $idSite);
+			$facebook_page_url = $settings->mastodonPageURLSetting->getValue();
 
 			if($facebook_page_url == ''){
 				$output.= '<p>You first need to configure the Facebook Page URL in your <a href="index.php?module=SitesManager&action=index#FacebookPageWidgetByAmperage">measurable (website/app) settings</a>.</p>';
