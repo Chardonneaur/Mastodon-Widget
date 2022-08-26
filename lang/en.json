@@ -1,8 +1,8 @@
 {
-    "FacebookPageWidgetByAmperage": {
-	    "FacebookPageWidgetByAmperage": "Facebook Page Widget by Amperage",
-        "Amperage": "Amperage",
+    "MastodonWidget": {
+	    "MastodonWidget": "A Mastodon Widget",
+        "Ronan Chardonneau": "Ronan Chardonneau",
         "Social": "Social",
-        "FacebookPage": "Facebook Page"
+        "MastodonWidget": "Mastodon Widget"
     }
 }
