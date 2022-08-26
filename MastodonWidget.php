@@ -6,9 +6,9 @@
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  */
 
-namespace Piwik\Plugins\FacebookPageWidgetByAmperage;
+namespace Piwik\Plugins\MastodonWidget;
 
-class FacebookPageWidgetByAmperage extends \Piwik\Plugin
+class MastodonWidget extends \Piwik\Plugin
 {
     /**
      * @see Piwik\Plugin::registerEvents
@@ -22,6 +22,6 @@ class FacebookPageWidgetByAmperage extends \Piwik\Plugin
 
     public function getStylesheetFiles(&$files)
     {
-        $files[] = "plugins/FacebookPageWidgetByAmperage/stylesheets/facebook-page.less";
+        $files[] = "plugins/Mastodon/stylesheets/mastodon.less";
     }
 }
