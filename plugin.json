@@ -1,30 +1,30 @@
 {
-	"name": "FacebookPageWidgetByAmperage",
-	"description": "Show Facebook Page plugin as a configurable widget.",
-	"version": "1.0.7",
+	"name": " MastodonPage",
+	"description": "Show a Mastodon page as a widget. Forked from an original developed by Amperage.",
+	"version": "0.0.1",
 	"theme": false,
-	"keywords": ["amperage", "facebook", "social", "widget", "facebook page", "dashboard"],
+	"keywords": ["mastodon", "social", "widget", "dashboard"],
 	"license": "GPL v3+",
-	"homepage": "https://www.amperagemarketing.com",
+	"homepage": "https://ronan-chardonneau.fr",
 	"require": {
 		"matomo": ">=4.0.0-b1,<5.0.0-b1"
 	},
 	"support": {
-		"email": "kzeni1@gmail.com",
-		"issues": "https://github.com/AMPERAGE-Marketing/Matomo-Facebook-Page-Widget/issues",
-		"wiki": "https://github.com/AMPERAGE-Marketing/Matomo-Facebook-Page-Widget/wiki",
-		"source": "https://github.com/AMPERAGE-Marketing/Matomo-Facebook-Page-Widget"
+		"email": "contact@ronan-chardonneau.com",
+		"issues": "https://github.com/ChardonneauR/Mastodon-Widget/issues",
+		"wiki": "https://github.com/ChardonneauR/Mastodon-Widget/wiki",
+		"source": "https://github.com/ChardonneauR/Mastodon-Widget/"
 	},
 	"authors": [
 		{
-			"name": "Amperage Marketing & Fundraising",
-			"email": "digital@amperagemarketing.com",
-			"homepage": "http://www.amperagemarketing.com"
+			"name": "Ronan Chardonneau",
+			"email": "contact@ronan-chardonneau.com",
+			"homepage": "https://ronan-chardonneau.fr"
 		},
 		{
-			"name": "Kurt Zenisek",
-			"email": "kzeni1@gmail.com",
-			"homepage": "http://kzeni.com"
+			"name": "Ronan Chardonneau",
+			"email": "contact@ronan-chardonneau.com",
+			"homepage": "https://ronan-chardonneau.com"
 		}
 	]
 }
